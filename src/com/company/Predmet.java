@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.predavanje03;
 
+import com.company.Student;
+
 public class Predmet {
     private Student[] niz_studenata;
     private String naziv_predmeta;
