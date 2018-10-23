@@ -1,8 +1,10 @@
-package ba.unsa.etf.rpr.predavanje03;
+package com.company;
+
+
 
 public class Program {
 
-    public static void main(int arg){
+    public static void main(String[]  arg){
         Student student1 = new Student("Amel", "Amelovic",   22);
         Student student2 = new Student("Mujo", "Mujic", 23);
         Student student3 = new Student("Kare", "Karic", 24);

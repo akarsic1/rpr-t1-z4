@@ -1,6 +1,6 @@
-package ba.unsa.etf.rpr.predavanje03;
+package com.company;
 
-import com.company.Student;
+
 
 public class Predmet {
     private Student[] niz_studenata;
