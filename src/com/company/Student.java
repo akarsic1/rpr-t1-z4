@@ -32,7 +32,10 @@ public class Student {
     public void setBroj_indexa(int broj_indexa) {
         this.broj_indexa = broj_indexa;
     }
-    public void ispisiStudenta(){
-        System.out.println(ime + " " + prezime + " " + "(" + broj_indexa + ")");
+    @Override
+    public String toString(){
+        String za_ispis;
+        za_ispis =(ime + " " + prezime + " " + "(" + broj_indexa + ")");
+        return za_ispis;
     }
 }

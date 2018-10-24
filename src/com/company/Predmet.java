@@ -3,17 +3,20 @@ package com.company;
 
 
 public class Predmet {
+
     private Student[] niz_studenata;
     private String naziv_predmeta;
     private int sifra_predmeta;
     private static int max_broj_studenata = 10;
     private int velicina = 0;
 
-    public Predmet(String predmet, int sifra, int m){
-        niz_studenata = new Student[m];
+
+
+    public Predmet(String predmet, int sifra, int max){
+        niz_studenata = new Student[max];
         naziv_predmeta = predmet;
         sifra_predmeta = sifra;
-        max_broj_studenata = m;
+        max_broj_studenata = max;
     }
     public void upisi(Student student){
         niz_studenata[velicina] = student;
@@ -50,8 +53,9 @@ public class Predmet {
 
     public void ispisStudenata(){
         for(int i = 0; i < velicina; i++){
-            System.out.print(i + 1 + ". ");
-            niz_studenata[i].ispisiStudenta();
+            System.out.print((i+1)+". ");
+            System.out.print(niz_studenata[i]);
+            System.out.println();
         }
     }
 }
